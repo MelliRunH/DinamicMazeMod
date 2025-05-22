@@ -5,7 +5,7 @@
     "Version": "1.0.0",
     "Description": "Genera laberintos dinámicos.",
     "Authors": [ "MelliRunH" ],
-    "website": "https://github.com/MelliRunH/laberinto",
+    "website": "https://github.com/MelliRunH/DinamicMazeMod",
     "websiteName": "Discort:mellirunh#8819",
     "requiredonclient": false,
     "requiredonserver": true,
