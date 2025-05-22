@@ -1,19 +1,35 @@
 {
-    {
-        "defaultSize": "mediano",
-        "allowCommandActivation": true,
-        "usePedestal": true,
-        "spawnAtPlayer": true,
-        "announceCoordinates": true,
-        "mazeDifficulty": "medio",
-        "trapChance": 0.25,
-        "rewardChance": 0.15,
-        "maxPlayers": 10,
-        "mazeDuration": 600,
-        "enableRanking": true,
-        "pedestalBlock": "game:mudbrick-light",
-        "wallBlock": "game:cobblestone",
-        "floorBlock": "game:stonepath",
-        "ceilingBlock": "game:planks-aged",
-        "algorithm": "dfs"
-    }
+    //recuerda tener el privilegio"game:admin" para poder usar el comando" "gamemode"
+    "defaultSize": "grande", //opciones->> chico  mediano  grande mazeWidth = Config.defaultSize switch"pequeño" "=>",25,"mediano" "=>", 50,"grande" "=>",150,"_" "=>",150
+    "pedestalBlock": "game:mudbrick-light", //el bloque inicial
+    "mazeHeight": 11, //la altura del laberinto
+    "trapChance": 0.25, //probabilidad de que haya trampas en el laberinto
+    "rewardChance": 0.15, //probabilidad de que haya recompensas en el laberinto
+    "mazeDurationSeconds": 1600, //duración del laberinto en segundos
+    "allowCommandActivation": true, //si se puede activar el laberinto con un comando
+    "announceCoordinates": true, //si se anuncian las coordenadas del laberinto
+    "maxPlayers": 20, // máximo de jugadores en el laberinto
+    "mazeDifficulty": "difícil", // dificultad del laberinto
+    "enableRanking": true, //si se habilita el ranking
+    "eventIntervalSeconds": 60, // intervalo de tiempo entre eventos
+    "wallBlockTypes": [ // //tipos de bloques de pared
+        "game:claybricks-uneven-four-soldier-fire",
+        "game:diamond-stone-clean"
+    ],
+    "floorBlock": "game:mudbrick-light", // bloque del suelo
+    "rewardBlock": "game:chest-east", // bloque de recompensa
+    "trapBlock": "game:trap-spike", //   bloque de trampa
+    "startMessage": "¡El laberinto dinámico ha comenzado!", // mensaje de inicio
+    "successMessage": "¡Felicidades, has completado el laberinto!", // mensaje de éxito
+    "failMessage": "Has fallado en el laberinto.", // mensaje de fallo
+    "possibleRewards": [ // recompensas posibles
+        "game:metalbit-steel",
+        "game:charcoal"
+    ],
+    "autoRegenerate": true, // si se regenera automáticamente el laberinto
+    "regenerateIntervalMinutes": 30, // intervalo de tiempo entre regeneraciones
+    "allowBlockBreaking": false, // si se permite romper bloques
+    "allowBlockPlacement": false, // si se permite colocar bloques
+    "enableDebugLogging": true, // si se habilita el registro de depuración
+    "penaltyFreezeSeconds": 15 // penalización de congelación en segundos
+}
