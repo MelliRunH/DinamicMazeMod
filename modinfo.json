@@ -1,11 +1,15 @@
 {
-    "Type": "mod",
+    "Type": "code",
     "Code": "dynamicmazemod",
     "Name": "DynamicMazeMod",
     "Version": "1.0.0",
-    "Description": "Genera laberintos dinámicos con recompensas, trampas y rankings.",
+    "Description": "Genera laberintos dinámicos.",
     "Authors": [ "MelliRunH" ],
+    "website": "https://github.com/MelliRunH/laberinto",
+    "websiteName": "Discort:mellirunh#8819",
+    "requiredonclient": false,
+    "requiredonserver": true,
     "Dependencies": {
         "game": "1.20.10"
-    }
+    } 
 }
